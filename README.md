@@ -437,6 +437,7 @@ b. set(): It changes the value stored in a variable and sets the value.
 c. Text(): It is useful when the user wants to insert multiline text.
 
 # Python Store Management System Output:
+![shop](https://github.com/Ajish777/Shop-Management-System/assets/110074935/b26e131c-4658-42a3-bcfd-0bd3d82e6384)
 
 
 
