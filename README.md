@@ -1,6 +1,6 @@
 
 # Project File Structure:
-Steps for developing shop / store management system:
+Steps for developing shop/store management system:
 
 1. Install tkinter
 2. Importing Libraries
@@ -437,8 +437,7 @@ b. set(): It changes the value stored in a variable and sets the value.
 c. Text(): It is useful when the user wants to insert multiline text.
 
 # Python Store Management System Output:
-![shop](https://github.com/Ajish777/Shop-Management-System/assets/110074935/b26e131c-4658-42a3-bcfd-0bd3d82e6384)
-
+![shop](https://github.com/Ajish777/Shop-Management-System/assets/110074935/474281a9-bd95-407d-aac3-61d32f61b7a9)
 
 
 
