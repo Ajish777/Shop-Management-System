@@ -5,7 +5,7 @@ from tkinter import messagebox
 import sqlite3  as db 
 
 mainwindow=Tk()
-mainwindow.title("ProjectGurukul Shop Management Project")
+mainwindow.title("Project Shop Management Project")
 tab = ttk.Notebook(mainwindow) 
 window1= ttk.Frame(tab)
 window2=ttk.Frame(tab)
