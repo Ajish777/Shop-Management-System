@@ -2,25 +2,26 @@
 # Project File Structure:
 Steps for developing shop/store management system:
 
-1. Install tkinter
-2. Importing Libraries
-3. Initializing the project window
-4. Developing connection and executing the query
-5. Function for adding stock
-6. Function for viewing stock
-7. Defining labels and buttons
-8. Function for generating bill
-9. Rest Code
+* Install tkinter
+* Importing Libraries
+* Initializing the project window
+* Developing connection and executing the query
+* Function for adding stock
+* Function for viewing stock
+* Defining labels and buttons
+* Function for generating bill
+* Rest Code
 
 # 1. Install tkinter:
 The simplest way to develop a graphical user interface is tkinter. Menus, date fields, buttons can be constructed with the help of this widget. To install tkinter on your system, run the command mentioned below on your terminal window or command prompt.
 
-
--> pip install tkinter
-
+```
+pip install tkinter
+```
 
 # 2. Importing Libraries:
 
+```
 from tkinter import *
 
 from tkinter import ttk
@@ -30,6 +31,7 @@ from tkcalendar import DateEntry
 from tkinter import messagebox
 
 import sqlite3  as db
+```
 
 # Code Explanation:
 
@@ -42,6 +44,7 @@ c. messagebox: Message Boxes are displayed on the screen with the help of messag
 d. sqlite3: It is a database engine.
 
 # 3. Initializing the project window:
+```
 mainwindow=Tk()
 
 mainwindow.title("Project Shop Management Project")
@@ -57,6 +60,7 @@ tab.add(window1, text ='stock')
 tab.add(window2, text ='sell') 
 
 tab.pack(expand = 1, fill ="both") 
+```
 
 # Code Explanation:
 
@@ -69,7 +73,7 @@ c. add(): It adds the text on the screen.
 d.pack(): First of all the widgets are placed in the block and then after that they are placed on the screen.
 
 # 4. Developing connection and executing the query:
-
+```
 def establishconnect():
     
     connectobject = db.connect("shopManagement.db")
@@ -102,6 +106,7 @@ def connection2():
     c.execute(sql)
     connectobject2.commit()   
     connection2()
+```
 
 # Code Explanation:
 
@@ -114,6 +119,7 @@ c. execute(): It helps in the execution process.
 d. commit(): The changes made by the user in the database are confirmed by commit().
 
 # 5. Function for adding stock:
+```
 def Stock():
     global dateE2,quantity,name,price
  
@@ -125,6 +131,7 @@ def Stock():
             '''
     c.execute(sql,(dateE2.get(),name.get(),price.get(),quantity.get()))
     connectobject.commit() 
+```
 
 # Code Explanation:
 
@@ -133,6 +140,7 @@ a. Stock(): This function helps in adding the stock.
 b. get(): It returns the text as a string.
 
 # 6. Function for viewing stock:
+```
 def viewingStock():
     
     connectobject = db.connect("shopManagement.db")
@@ -150,6 +158,7 @@ def viewingStock():
             allrows+=str(j)+'\t'
         allrows+='\n'
         viewingarea2.insert(END,allrows)
+```
 
 # Code Explanation:
 
@@ -160,6 +169,7 @@ b. insert(): It helps in the insertion of the string at a specified block.
 c. fetchall(): All rows of queries result set is returned with fetchall().
 
 # 7. Defining labels and buttons:
+```
 dateL=Label(window1,text="Date",width=12,font=('arial',15,'bold'))
 
 dateL.grid(row=0,column=0,padx=7,pady=7)
@@ -201,6 +211,7 @@ viewbutton2=Button(window1,command=viewingStock,text="View Stock",
 font=('arial',15,'bold'),bg="pink",width=20 )
  
 viewbutton2.grid(row=4,column=0,padx=7,pady=7)
+```
 
 # Code Explanation:
 
@@ -217,6 +228,7 @@ e. IntVar(): It is responsible for returning the value as an integer.
 f. Entry(): Text strings are accepted with the help of this widget.
 
 # 8. Function for generating bill:
+```
 def Bill():
     
     connectobject = db.connect("shopManagement.db")
@@ -294,6 +306,7 @@ def Bill():
         quantity=IntVar()
         quantity=p1quant.get()+p2quant.get()+p3quant.get()+p4quant.get()
         areaforbill.insert(END,f"\nTotal \t \t  \t{quantity}\t {Total}")
+```
 
 # Code Explanation:
 
@@ -306,6 +319,7 @@ c. delete(): This widget helps in the deletion of the text.
 d. insert(): It helps in the insertion of text at the specified block.
 
 # 9. Rest Code:
+```
 def view():
     
     connectobject = db.connect("shopManagement.db")
@@ -427,6 +441,7 @@ viewingarea=Text(window2)
 viewingarea.grid(row=9,column=0)
  
 mainloop()
+```
 
 # Code Explanation:
 
