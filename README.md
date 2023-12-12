@@ -35,13 +35,13 @@ import sqlite3  as db
 
 # Code Explanation:
 
-a. Ttk: Tk themed widget set can be accessed with the help of this module.
+* Ttk: Tk themed widget set can be accessed with the help of this module.
 
-b. tkcalendar: DateEntry and calendar widgets are provided with the help of this module.
+* tkcalendar: DateEntry and calendar widgets are provided with the help of this module.
 
-c. messagebox: Message Boxes are displayed on the screen with the help of messagebox.
+* messagebox: Message Boxes are displayed on the screen with the help of messagebox.
 
-d. sqlite3: It is a database engine.
+* sqlite3: It is a database engine.
 
 # 3. Initializing the project window:
 ```
@@ -64,13 +64,13 @@ tab.pack(expand = 1, fill ="both")
 
 # Code Explanation:
 
-a. ttk.Frame(): It is a rectangular container which is for other widgets.
+* ttk.Frame(): It is a rectangular container which is for other widgets.
 
-b. ttk.Notebook(): It is responsible for the management of collection of windows. It also displays one screen at a time.
+* ttk.Notebook(): It is responsible for the management of collection of windows. It also displays one screen at a time.
 
-c. add(): It adds the text on the screen.
+* add(): It adds the text on the screen.
 
-d.pack(): First of all the widgets are placed in the block and then after that they are placed on the screen.
+* pack(): First of all the widgets are placed in the block and then after that they are placed on the screen.
 
 # 4. Developing connection and executing the query:
 ```
@@ -110,13 +110,13 @@ def connection2():
 
 # Code Explanation:
 
-a. db.connect(): It is used to connect to the database.
+* db.connect(): It is used to connect to the database.
 
-b. cursor(): It shows the current position of the mouse.
+* cursor(): It shows the current position of the mouse.
 
-c. execute(): It helps in the execution process.
+* execute(): It helps in the execution process.
 
-d. commit(): The changes made by the user in the database are confirmed by commit().
+* commit(): The changes made by the user in the database are confirmed by commit().
 
 # 5. Function for adding stock:
 ```
@@ -135,9 +135,9 @@ def Stock():
 
 # Code Explanation:
 
-a. Stock(): This function helps in adding the stock.
+* Stock(): This function helps in adding the stock.
 
-b. get(): It returns the text as a string.
+* get(): It returns the text as a string.
 
 # 6. Function for viewing stock:
 ```
@@ -162,11 +162,11 @@ def viewingStock():
 
 # Code Explanation:
 
-a. viewingstock(): This function helps to view the stock.
+* viewingstock(): This function helps to view the stock.
 
-b. insert(): It helps in the insertion of the string at a specified block.
+* insert(): It helps in the insertion of the string at a specified block.
 
-c. fetchall(): All rows of queries result set is returned with fetchall().
+* fetchall(): All rows of queries result set is returned with fetchall().
 
 # 7. Defining labels and buttons:
 ```
@@ -215,17 +215,17 @@ viewbutton2.grid(row=4,column=0,padx=7,pady=7)
 
 # Code Explanation:
 
-a. Label(): It helps in the implementation of display boxes.
+* Label(): It helps in the implementation of display boxes.
 
-b. DateEntry(): It is useful in the selection of dates.
+* DateEntry(): It is useful in the selection of dates.
 
-c. Button(): This widget adds buttons to the application.
+* Button(): This widget adds buttons to the application.
 
-d. StringVar(): Management of the value of widgets such as labels or entries is done with this widget.
+* StringVar(): Management of the value of widgets such as labels or entries is done with this widget.
 
-e. IntVar(): It is responsible for returning the value as an integer.
+* IntVar(): It is responsible for returning the value as an integer.
 
-f. Entry(): Text strings are accepted with the help of this widget.
+* Entry(): Text strings are accepted with the help of this widget.
 
 # 8. Function for generating bill:
 ```
@@ -310,13 +310,13 @@ def Bill():
 
 # Code Explanation:
 
-a. Bill(): This function helps in generating the bill.
+* Bill(): This function helps in generating the bill.
 
-b. showerror(): This widget helps in displaying an error message on the screen.
+* showerror(): This widget helps in displaying an error message on the screen.
 
-c. delete(): This widget helps in the deletion of the text.
+* delete(): This widget helps in the deletion of the text.
 
-d. insert(): It helps in the insertion of text at the specified block.
+* insert(): It helps in the insertion of text at the specified block.
 
 # 9. Rest Code:
 ```
@@ -445,13 +445,14 @@ mainloop()
 
 # Code Explanation:
 
-a. grid(): It puts the widget in a 2-dimensional table.
+* grid(): It puts the widget in a 2-dimensional table.
 
-b. set(): It changes the value stored in a variable and sets the value.
+* set(): It changes the value stored in a variable and sets the value.
 
-c. Text(): It is useful when the user wants to insert multiline text.
+* Text(): It is useful when the user wants to insert multiline text.
 
 # Python Store Management System Output:
+
 ![shop](https://github.com/Ajish777/Shop-Management-System/assets/110074935/474281a9-bd95-407d-aac3-61d32f61b7a9)
 
 
